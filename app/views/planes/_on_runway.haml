@@ -1,0 +1,5 @@
+%tr{ data: { plane_id: plane.id } }
+  %td= plane.name
+  %td
+    %span.label.label-warning= I18n.t("plane.status.#{plane.status}")
+  %td= simple_datetime(plane.updated_at)

@@ -1,0 +1,11 @@
+%table.table
+  %thead
+    %th Name
+    %th Status
+    %th Time update
+  %tbody
+    - @change_history.each do |plane|
+      %tr
+        %td= plane.reify.try(:name) || plane.item.try(:name)
+        %td= plane.reify.try(:status) || plane.item.try(:status)
+        %td= simple_datetime(plane.created_at)

@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username:
+  password:
+
+development:
+ <<: *default
+ database: runway_development
+
+test:
+ <<: *default
+ database: runway_test
+
+production:
+ <<: *default
+ database: runway_development

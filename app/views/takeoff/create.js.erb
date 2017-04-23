@@ -1,0 +1,2 @@
+$("#planes_in_hangar-box").find(".panel[data-plane-id='<%= @plane.id %>']").remove();
+$("#on_runway_table-box").append("<%= escape_javascript(render partial: 'planes/on_runway', locals: { plane: @plane } ) %>");

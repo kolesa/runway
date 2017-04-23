@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Runway
+    = stylesheet_link_tag    'application', media: 'all'
+    = boostrap_css_include_tag
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = action_cable_meta_tag
+    = csrf_meta_tags
+  %body
+    = render 'navbar'
+    .raw
+      = yield

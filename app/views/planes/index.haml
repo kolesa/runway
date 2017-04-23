@@ -1,0 +1,13 @@
+.col-md-8#planes_in_hangar-box
+  %h2 In hangar
+  = render partial: 'plane', collection: @planes_in_hangar
+.col-md-4
+  %h2 On runway
+  %table.table
+    %thead
+      %th Name
+      %th Status
+      %th Time
+    %tbody#on_runway_table-box
+      - @waiting_planes.each do |plane|
+        = render 'on_runway', plane: plane
