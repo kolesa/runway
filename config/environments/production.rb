@@ -83,4 +83,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_cable.url = 'wss://runway-kolesa.herokuapp.comcable'
+  config.action_cable.allowed_request_origins = [ 'https://runway-kolesa.herokuapp.com']
 end
