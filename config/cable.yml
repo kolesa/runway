@@ -1,6 +1,6 @@
 redis: &redis
   adapter: redis
-  url:  <%= ENV['HEROKU_REDIS_OLIVE_URL'] %>
+  url: redis://h:p29e013c095f3905a53108c44928c017c9e14ffb9db8c46c06581248f778ed5ba@ec2-34-251-183-72.eu-west-1.compute.amazonaws.com:17019
 
 production: *redis
 development: *redis
