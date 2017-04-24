@@ -1,6 +1,6 @@
 redis: &redis
   adapter: redis
-  url: redis://h:p29e013c095f3905a53108c44928c017c9e14ffb9db8c46c06581248f778ed5ba@ec2-34-251-183-72.eu-west-1.compute.amazonaws.com:17019
+  url: redis://h:p052d07aa1a73ad5b9c9de23323614194c933034af1dea1459407e82d510fbbbd@ec2-34-249-251-118.eu-west-1.compute.amazonaws.com:28289
 
 production: *redis
 development: *redis
