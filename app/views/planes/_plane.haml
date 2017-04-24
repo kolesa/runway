@@ -4,4 +4,4 @@
     %span.label.label-info= I18n.t("plane.status.#{plane.status}")
     %br
     %br
-    = link_to 'На взлет', takeoff_path(plane_id: plane.id), method: :post, class: 'btn btn-default', remote: true
+    = link_to 'On takeoff', takeoff_path(plane_id: plane.id), method: :post, class: 'btn btn-default', remote: true
